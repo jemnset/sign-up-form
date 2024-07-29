@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box; 
 }
 
 body{
@@ -75,25 +76,66 @@ body{
     font-weight: bold;
     margin-left: 50px;
     margin-right: 150px;
+    min-width: 700px;
 }
 
 .form-container {
-    height: 300px;
     background-color: white;
     box-shadow: 5px 5px 5px rgb(214, 213, 213);
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .form-header {
     margin-left: 50px;
+    font-size: 20pt;
 }
 
-.form-row {
+.form-fields{
+    display: flex;
+}
+
+.form-col > label{
+    font-size: 8pt;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.form-col > input {
+    border-style: solid;
+    border-color: #E5E7EB;
+    width: 250px;
+    padding: 5px;
+}
+
+.form-col > input:invalid{
+    border-color: red;
+}
+
+.form-col > input:focus{
+    border-color: rgb(51, 51, 249);
+    box-shadow: 2px 2px 2px rgb(214, 213, 213);
+}
+
+.left-form-col {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.right-form-col {
+    display: flex;
+    flex-direction: column;
     margin-left: 50px;
 }
 
 .form-footer {
     margin-left: 50px;
     margin-top: 50px;
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 input.create-account{
@@ -104,4 +146,6 @@ input.create-account{
     font-size: 12pt;
     font-weight: bold;
     color: white;
+    width: 200px;
+
 }

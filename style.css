@@ -67,7 +67,7 @@ body{
     flex-direction: column;
     justify-content: center;
     gap: 60px;
-    flex: 0 0 66%
+    background-color: rgb(249,250,251);
 }
 
 .infodump{
@@ -79,6 +79,8 @@ body{
 
 .form-container {
     height: 300px;
+    background-color: white;
+    box-shadow: 5px 5px 5px rgb(214, 213, 213);
 }
 
 .form-header {
@@ -91,4 +93,15 @@ body{
 
 .form-footer {
     margin-left: 50px;
+    margin-top: 50px;
+}
+
+input.create-account{
+    background-color: rgb(88, 182, 212);
+    border-style: none;
+    border-radius: 5px;
+    padding: 10px 35px 10px 35px;
+    font-size: 12pt;
+    font-weight: bold;
+    color: white;
 }
